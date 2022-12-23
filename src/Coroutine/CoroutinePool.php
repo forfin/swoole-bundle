@@ -114,6 +114,6 @@ final class CoroutinePool
 
     private static function inCoroutine(): bool
     {
-        return -1 !== Coroutine::getuid();
+        return -1 !== Coroutine::getCid();
     }
 }
